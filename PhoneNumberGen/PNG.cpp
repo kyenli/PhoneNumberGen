@@ -1,13 +1,13 @@
 #include<stdio.h>
 int main()
 {
-	int head,wei;//¶¨ÒåÍ·²¿ºÍÎ²²¿±äÁ¿ 
-	int l;//Éú³ÉÀÛ¼Æ´ÎÊı 
-	printf("ÊäÈëºÅÂëÍ·£º");
-	scanf("%d %d",&head,&wei);
+	int head,tail;//å®šä¹‰å¤´éƒ¨å’Œå°¾éƒ¨å˜é‡ 
+	int l;//ç”Ÿæˆç´¯è®¡æ¬¡æ•° 
+	printf("è¾“å…¥å·ç å¤´ï¼š");
+	scanf("%d %d",&head,&tail);
 	int a,b,c,d,e,f;
 	
-	//ÏÂÃæÖ±½ÓÊ¹ÓÃÏâÇ¶forÑ­»·5´Î 
+	//ä¸‹é¢ç›´æ¥ä½¿ç”¨é•¶åµŒforå¾ªç¯5æ¬¡ 
 	 
 	for(a=0;a<10;a++)
 	{
@@ -19,13 +19,13 @@ int main()
 				{
 					for(e=0;e<10;e++)
 					{
-						l++;//¼ÆËã´ÎÊı 
-						printf("%d%d%d%d%d%d%d\n",head,a,b,c,d,e,wei);
-						FILE  *fp ; //ÎÄ¼şÖ¸Õë 
-    					fp=fopen(  "ÎÒµÄÎÄµµ.txt",  "a+");  
+						l++;//è®¡ç®—æ¬¡æ•° 
+						printf("%d%d%d%d%d%d%d\n",head,a,b,c,d,e,tail);
+						FILE  *fp ; //æ–‡ä»¶æŒ‡é’ˆ 
+    					fp=fopen(  "ç”Ÿæˆçš„å·ç .txt",  "a+");  
 
-   						fprintf(  fp,"%d%d%d%d%d%d%d\n",head,a,b,c,d,e,wei);
-    					fclose(fp);//¹Ø±Õ Ğ´²Ù×÷ 
+   						fprintf(  fp,"%d%d%d%d%d%d%d\n",head,a,b,c,d,e,tail);
+    					fclose(fp);//å…³é—­ å†™æ“ä½œ 
 						
 					}
 				}
@@ -36,6 +36,6 @@ int main()
 			
 	}
 	
-	printf("Éú³ÉÁË%d´Î£¡",l);
+	printf("ç”Ÿæˆäº†%dæ¬¡ï¼",l);
 	
 }
